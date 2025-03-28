@@ -311,7 +311,6 @@
 
 // .trim()
 
-
 // let name = "   USAMA KHANZADA      ";
 // name = name.trim();
 // console.log(name);
@@ -319,24 +318,19 @@
 // let name = "USAMA KHANZADA";
 // console.log(name.trim());
 
-
 // .slice(star,end);
 
 // take index number start from index number and end is optinol and also non exsulsive
-
-
 
 // let name = "   USAMA KHANZADA      ";
 // name = name.trim();
 // console.log(name);
 
-
 // slice
 // slice  is used to extract a part of a string and return a new string without changing the original string
 // first parameter is start index and second is end index but end index is optional and not print
 // let name ="usama khanzada";
-// console.log(name.slice(0,5));     
-
+// console.log(name.slice(0,5));
 
 // .concat
 // add 2 string and return a new string
@@ -344,9 +338,8 @@
 // let name1 ="usama";
 // let name2=" khanzada";
 // let res = name1.concat(name2);
- // let res = name1 + name2;
+// let res = name1 + name2;
 // console.log(res);
-
 
 // .replace and .replaceAll
 // first peremeter in kis ko ko replace kena h 2nd kis k sath
@@ -354,8 +347,67 @@
 // let name = "hello ";
 // let res = name.replace("h","y");
 
-// console.log(res); 
+// console.log(res);
 
 // let Name =prompt("enter your full name");
-// let userName ="@"+Name+(Name.length); 
+// let userName ="@"+Name+(Name.length);
 // console.log(userName);
+
+// ternary operators
+
+// let age = 16;
+//  age >= 18 ? "adult" : "not adult";
+// use this type in project its use chack the condition not for console  age console karana hoga tb if eles lagaye ly
+
+// let age = 16;
+// let result = age >= 18 ? "adult" : "not adult";
+// console.log(result);
+
+// let age = 16;
+// let result = age >= 18 ? console.log("adult") : console.log("not adult");
+
+// practice question
+
+// let num = prompt ("enter a number");
+//
+//  num % 5 === 0 ? console.log("its miltipal by 5") : console.log("not miltipal by 5");
+
+// if (num % 5 === 0){
+//     console.log("its miltipal by 5");
+// }else{
+//     console.log("not miltipal by 5");
+// };
+
+// let scores = prompt("enter your scores");
+
+// if (scores <= 100 && scores >= 90) {
+//   console.log("A+");
+// } else if (scores <= 89 && scores >= 70) {
+//   console.log("A");
+// } else if (scores <= 69 && scores >= 60) {
+//   console.log("B");
+// } else if (scores <= 59 && scores >= 50) {
+//   console.log("C");
+// } else if (scores <= 49 && scores >= 0) {
+//   console.log("F");
+// }else {
+//     console.log("please enter valid scores");
+// }
+
+let scores = prompt("enter your scores");
+let grade;
+if (scores <= 100 && scores >= 90) {
+  grade = "A+";
+} else if (scores <= 89 && scores >= 70) {
+  grade = "A";
+} else if (scores <= 69 && scores >= 60) {
+  grade = "B";
+} else if (scores <= 59 && scores >= 50) {
+  grade = "c";
+} else if (scores <= 49 && scores >= 0) {
+  grade = "F";
+} else {
+  grade =
+  "please enter valid scores";
+}
+console.log(grade); 
