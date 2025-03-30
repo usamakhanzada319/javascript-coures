@@ -394,20 +394,44 @@
 //     console.log("please enter valid scores");
 // }
 
-let scores = prompt("enter your scores");
-let grade;
-if (scores <= 100 && scores >= 90) {
-  grade = "A+";
-} else if (scores <= 89 && scores >= 70) {
-  grade = "A";
-} else if (scores <= 69 && scores >= 60) {
-  grade = "B";
-} else if (scores <= 59 && scores >= 50) {
-  grade = "c";
-} else if (scores <= 49 && scores >= 0) {
-  grade = "F";
-} else {
-  grade =
-  "please enter valid scores";
+// let scores = prompt("enter your scores");
+// let grade;
+// if (scores <= 100 && scores >= 90) {
+//   grade = "A+";
+// } else if (scores <= 89 && scores >= 70) {
+//   grade = "A";
+// } else if (scores <= 69 && scores >= 60) {
+//   grade = "B";
+// } else if (scores <= 59 && scores >= 50) {
+//   grade = "c";
+// } else if (scores <= 49 && scores >= 0) {
+//   grade = "F";
+// } else {
+//   grade =
+//   "please enter valid scores";
+// }
+// console.log(grade);
+
+//  loop
+// for loop
+// for ( let i=1; i <= 5; i++){
+//   console.log("usama");
+// }
+
+// practice question
+// calculate the sum of n using a for loop
+// let sum = 0;
+// for (let i = 1; i <= 5; i++) {
+//   sum = sum + i;
+// }
+// console.log(sum);
+ 
+
+let n = 5;
+let sum = 0;
+for (let i = 1; i <= n; i++) {
+  sum += i;
+  
 }
-console.log(grade); 
+console.log(sum);
+
