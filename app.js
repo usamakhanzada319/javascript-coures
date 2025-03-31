@@ -427,11 +427,62 @@
 // console.log(sum);
  
 
-let n = 5;
-let sum = 0;
-for (let i = 1; i <= n; i++) {
-  sum += i;
+// let n = 5;
+// let sum = 0;
+// for (let i = 1; i <= n; i++) {
+//   sum += i;
   
-}
-console.log(sum);
+// }
+// console.log(sum);
 
+
+// let sum = 0;
+// let n = 6;
+// for (let i = 1; i <= n; i++) {
+//   sum = sum + i;
+// }
+// console.log("sum of ",n ,"id",sum);
+
+// infinity loop
+// a loop that never ends and its condiyion never give false 
+
+
+// for (i =1; 1 >=0  ; i++){
+//   console.log(i);
+// }
+
+
+// while loop
+// initilization
+// while(condition){
+//   do some work 
+//   updation
+// }
+
+
+// i =1;
+// while(i<=5){
+//   console.log("usama");
+//   i++;
+// }
+
+
+
+// do while loop
+// stoping condition will check in last 
+// atleast run one time if condition is false
+// in last ; semicolan is must use in while condition
+
+// do{some work
+// }while(condition);
+
+// let i =20;
+// do {console.log("usama");
+// i++;
+// }while(i <=10);
+// loop run one time 20 10 sy chota nahi hota or condition false hogi but loop ek time lazmi run hoga
+
+let i = 1;
+do {console.log(i); 
+  i++;
+}while(i<=5);
