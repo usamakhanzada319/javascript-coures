@@ -425,16 +425,14 @@
 //   sum = sum + i;
 // }
 // console.log(sum);
- 
 
 // let n = 5;
 // let sum = 0;
 // for (let i = 1; i <= n; i++) {
 //   sum += i;
-  
+
 // }
 // console.log(sum);
-
 
 // let sum = 0;
 // let n = 6;
@@ -444,21 +442,18 @@
 // console.log("sum of ",n ,"id",sum);
 
 // infinity loop
-// a loop that never ends and its condiyion never give false 
-
+// a loop that never ends and its condiyion never give false
 
 // for (i =1; 1 >=0  ; i++){
 //   console.log(i);
 // }
 
-
 // while loop
 // initilization
 // while(condition){
-//   do some work 
+//   do some work
 //   updation
 // }
-
 
 // i =1;
 // while(i<=5){
@@ -466,10 +461,8 @@
 //   i++;
 // }
 
-
-
 // do while loop
-// stoping condition will check in last 
+// stoping condition will check in last
 // atleast run one time if condition is false
 // in last ; semicolan is must use in while condition
 
@@ -482,7 +475,164 @@
 // }while(i <=10);
 // loop run one time 20 10 sy chota nahi hota or condition false hogi but loop ek time lazmi run hoga
 
-let i = 1;
-do {console.log(i); 
-  i++;
-}while(i<=5);
+// let i = 1;
+// do {console.log(i);
+//   i++;
+// }while(i<=5);
+
+// for fo loop
+// iit help us to iterate over and set loop on string and array data type
+//for (let var of string/array variabel){
+// do some work };
+
+// let str ="usama";
+// for(let i of str){
+//   console.log("i =",i);
+// }
+
+// find the length of the string by using for of loop
+
+// let str ="usama";
+// let size = 0;
+// for(let val of str){
+//   console.log("val =",val);
+//   size++
+// }
+// console.log("size of string is ",size)
+
+// for in loop
+// used to iterate over the properties of an object and retrun key also use on array
+
+// for (let key in variabel){
+// do some work
+// }
+
+// lets find thek key and there value
+
+// let student = {
+//   name: "usama",
+//   age: 24,
+//   cgpa: 7.5,
+//   ispass: true,
+// };
+// for (let key in student) {
+//   console.log("key of student is", key , "key value is " ,student [key]);
+// }
+
+// practice question
+
+// print 1 to 100
+
+// for ( i=0 ; i <= 100; i++){
+//   console.log(i);
+// }
+
+// print 0 to 100 even number
+// for ( i=0 ; i <= 100; i++){
+// if(i % 2 === 0){
+//     console.log(i);
+//   }
+// }
+
+// print 0 to 100 odd number
+// for ( i=0 ; i <= 100; i++){
+//   if(i % 2 !== 0){
+//       console.log(i);
+//     }
+//   }
+
+// practice question
+// create a game where you start with any random number.  ask the user to keep guessing the number until the user enters correct value
+
+// let  num = 5;
+// let gameNum =  parseInt (prompt("enter a number"));
+
+// while(gameNum != num){
+//   gameNum = parseInt (prompt("enter an other number"));
+// }
+
+// console.log("win");
+
+// tamplate literals ,speacial string ,typeof string
+// creat by using `` backtick and use ${expression} to insert value in string
+// and ${expression} is called expression embeddeding
+// string interpolatio , to create  string by doing subsitution of placeholder with actual value
+// let sum =`sum os 1+2+3 is ${1+2+3}`;
+// console.log(sum);
+
+// let obj ={
+//   name: "pen",
+//   price:10,
+// }
+// let result =`price of ${obj.name} is ${obj.price} rupees`;
+// console.log(result);
+
+// for line brake
+// let fullName ="usama\nkhanzada";
+// console.log(fullName);
+// for tab sapce
+// let fullName ="usama\tkhanzada";
+// console.log(fullName);
+
+// toUpperCase();
+// let str = "usama khanzada";
+// let newstr = str .toUpperCase();
+// console.log(str);  //for original string
+// console.log(newstr);
+
+// let str = "usama khanzada";
+// str = str.toUpperCase();
+// console.log(str);
+
+
+// toLowerCase()
+// let str = "USAMA KHANZADA";
+// let newstr = str .toLowerCase();
+// console.log(str);  //for original string
+// console.log(newstr);
+
+// let str = "USAMA KHANZADA";
+// str = str .toLowerCase();
+// console.log(str); 
+
+
+
+
+
+// trim()  remove whitespaces from starting and ending.
+
+// let str = "    USAMA KHANZADA        ";
+// console.log(str.trim());
+
+
+
+// str.slice(start,end);
+// start is inclusive and end is exclusive
+// let str ="0123456789";
+// console.log(str.slice(1,6));//12345 ending index is not included
+// console.log(str.slice(1));//123456789
+
+
+// str1.concat(str2);
+
+// let str1 ="usama";
+// let str2 =" khanzada";
+// let result =str1.concat(str2);
+// console.log(result); 
+
+
+// an other way
+
+
+// let str1 ="usama";
+// let str2 =" khanzada";
+
+// let result =`my name is ${str1}${str2}`;
+// console.log(result);
+
+
+
+// str.replacer(old,new);
+
+// let str ="hello";
+// console.log (str.replace("lo",("p")))//help
