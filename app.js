@@ -584,7 +584,6 @@
 // str = str.toUpperCase();
 // console.log(str);
 
-
 // toLowerCase()
 // let str = "USAMA KHANZADA";
 // let newstr = str .toLowerCase();
@@ -593,18 +592,12 @@
 
 // let str = "USAMA KHANZADA";
 // str = str .toLowerCase();
-// console.log(str); 
-
-
-
-
+// console.log(str);
 
 // trim()  remove whitespaces from starting and ending.
 
 // let str = "    USAMA KHANZADA        ";
 // console.log(str.trim());
-
-
 
 // str.slice(start,end);
 // start is inclusive and end is exclusive
@@ -612,27 +605,49 @@
 // console.log(str.slice(1,6));//12345 ending index is not included
 // console.log(str.slice(1));//123456789
 
-
 // str1.concat(str2);
 
 // let str1 ="usama";
 // let str2 =" khanzada";
 // let result =str1.concat(str2);
-// console.log(result); 
-
+// console.log(result);
 
 // an other way
 
-
-// let str1 ="usama";
-// let str2 =" khanzada";
+// let str1 ,="usama";
+// let str2, =" khanzada";
 
 // let result =`my name is ${str1}${str2}`;
 // console.log(result);
-
-
 
 // str.replacer(old,new);
 
 // let str ="hello";
 // console.log (str.replace("lo",("p")))//help
+
+// practic question
+// prompt  the user to enter their full nmae. generate a username for them based on the input start username with @.
+// followed by their fullname and ending with the fullname length
+
+// let fullName = prompt("enter your full name", "guest").trim();
+// let userName = `@${fullName.toLowerCase().replace(/\s+/g, "")}${
+//   fullName.length
+// }`;
+// console.log(userName);
+
+// .replace() method used to replace a parts to a string
+// /\s+/     //regex pattern to match one mor spaces or  any whitesspaces characters(spaces ,tabs etc)
+// g     // globel flag -> to replace all occurrences , not just the first time
+
+// ""     // replace nwith nothing (remove it )
+
+
+
+// arrays 
+// collection of items in a single name or variable
+// let marks =[94,85,76,67,58];
+// console.log(marks);
+// also find the length of array but .length is property not method in array
+// console.log(marks.length);
+// array is not its salf a persnol data type its a object in js, and a special type of object
+// ye samj sakty hn k array m object ki thara key:value pair hota h but key ki jaga index number hota h 
