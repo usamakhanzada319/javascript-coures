@@ -626,7 +626,7 @@
 // console.log (str.replace("lo",("p")))//help
 
 // practic question
-// prompt  the user to enter their full nmae. generate a username for them based on the input start username with @.
+// prompt  the user to enter their full nmae. generate a username for them based on the input start username with @
 // followed by their fullname and ending with the fullname length
 
 // let fullName = prompt("enter your full name", "guest").trim();
@@ -641,13 +641,59 @@
 
 // ""     // replace nwith nothing (remove it )
 
-
-
-// arrays 
+// arrays
 // collection of items in a single name or variable
 // let marks =[94,85,76,67,58];
 // console.log(marks);
 // also find the length of array but .length is property not method in array
 // console.log(marks.length);
 // array is not its salf a persnol data type its a object in js, and a special type of object
-// ye samj sakty hn k array m object ki thara key:value pair hota h but key ki jaga index number hota h 
+// ye samj sakty hn k array m object ki thara key:value pair hota h but key ki jaga index number hota h
+
+// array indices -> pulral of index
+// index is a number that represent the position of an item in an array
+
+// let marks = [91, 82, 73, 64, 55];
+// console.log(marks);
+// console.log(marks[0]); //excess first index of array
+// marks[0] = 88;         // update the value of array by using index number
+// console.log(marks);
+
+// looping over on array
+
+// let student =["usama" , "haseeb" ,"misbah","asbah","jameel"];
+// for( let i = 0 ; i < student.length ; i++) {
+//     console.log(student);
+// }
+
+let passCount = 0;
+let failCount = 0;
+let marks = [85, 42, 77, 90, 38, 59];
+let mark = 0;
+for (mark of marks) {
+  if (mark <= 50) {
+    passCount++;
+  } else {
+    failCount++;
+  }
+}
+console.log(passCount);
+console.log(failCount);
+
+
+// let passCount = 0;
+// let failCount = 0;
+// let marks = [85, 42, 77, 90, 38, 59];
+
+// for (let mark of marks) {
+//   if (mark >= 50) {
+//     passCount++;
+//     console.log(`${mark}: Pass`);
+//   } else {
+//     failCount++;
+//     console.log(`${mark}: Fail`);
+//   }
+// }
+
+// console.log(`Total Passed: ${passCount}`);
+// console.log(`Total Failed: ${failCount}`);
