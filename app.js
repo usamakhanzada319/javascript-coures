@@ -666,34 +666,41 @@
 //     console.log(student);
 // }
 
-let passCount = 0;
-let failCount = 0;
-let marks = [85, 42, 77, 90, 38, 59];
-let mark = 0;
-for (mark of marks) {
-  if (mark <= 50) {
-    passCount++;
-  } else {
-    failCount++;
-  }
-}
-console.log(passCount);
-console.log(failCount);
+// pactice question
 
-
-// let passCount = 0;
-// let failCount = 0;
-// let marks = [85, 42, 77, 90, 38, 59];
-
+// let passcount = 0;
+// let failcount = 0;
+// let marks = [95, 86, 41, 33, 56];
 // for (let mark of marks) {
 //   if (mark >= 50) {
-//     passCount++;
-//     console.log(`${mark}: Pass`);
+//     passcount++;
+//     console.log(`${mark} pass`);
 //   } else {
-//     failCount++;
-//     console.log(`${mark}: Fail`);
+//     failcount++;
+//     console.log(`${mark} fail`);
 //   }
 // }
+// console.log(`number of pass student is ${passcount}`);
+// console.log(`number of fail student is ${failcount}`);
 
-// console.log(`Total Passed: ${passCount}`);
-// console.log(`Total Failed: ${failCount}`);
+// pactice question
+
+// let capName = [`usama`, `haseeb`,`misbah`,`asbah`,`jameel`]
+
+// for (let name of capName){
+//  let capitalized =  name[0].toUpperCase()+name.slice(1);
+//   console.log((capitalized));
+// }
+
+
+// find average of numbers 
+
+
+// let sum = 0;
+// let marks = [85, 97, 44, 37, 76, 60];
+
+// for (let num of marks) {
+//   sum =+ num;
+// }
+// let  newsum = sum / marks.length;
+// console.log(newsum);
