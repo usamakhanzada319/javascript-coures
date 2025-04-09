@@ -692,15 +692,30 @@
 //   console.log((capitalized));
 // }
 
-
-// find average of numbers 
-
+// find average of numbers
 
 // let sum = 0;
 // let marks = [85, 97, 44, 37, 76, 60];
-
-// for (let num of marks) {
-//   sum =+ num;
+// for (let mark of marks){
+//     sum+=mark;
 // }
-// let  newsum = sum / marks.length;
-// console.log(newsum);
+// let avg= sum/marks.length;
+// console.log(`average of marks is ${avg}`);
+
+// let items = [250,645,300,900,50];
+// let i= 0;
+// for(let val of items){
+//    let  offer = val/10;
+//    let newoffer = val- offer;
+//    console.log(`item ${i} price is ${val} and after discountis ${newoffer} `);
+//    i++
+// }
+
+let items = [250, 645, 300, 900, 50];
+for (let i = 0; i < items.length; i++) {
+  let offer = items[i] / 10;
+  let newoffer =items[i]-offer;
+//    console.log(`item ${i} price is ${items[i]} and after discountis ${newoffer} `);
+
+   console.log(`${newoffer}`)
+}
