@@ -711,11 +711,39 @@
 //    i++
 // }
 
-let items = [250, 645, 300, 900, 50];
-for (let i = 0; i < items.length; i++) {
-  let offer = items[i] / 10;
-  let newoffer =items[i]-offer;
-//    console.log(`item ${i} price is ${items[i]} and after discountis ${newoffer} `);
+// let items = [250, 645, 300, 900, 50];
+// for (let i = 0; i < items.length; i++) {
+//   let offer = items[i] / 10;
+//   let newoffer =items[i]-offer;
+// //    console.log(`item ${i} price is ${items[i]} and after discountis ${newoffer} `);
 
-   console.log(`${newoffer}`)
-}
+//    console.log(`${newoffer}`)
+// }
+
+// let items = [250, 645, 300, 900, 50];
+// for (i=0; i<items.length;i++){
+//   let offer=  items[i]/10;
+//   items[i]-=offer;
+//   console.log(items[i]);
+// }
+
+// Methods of array
+
+// 1 .push() and to end
+
+// let name =["usama","misbah","haseeb"];
+//  name.push("jameel","asbah");
+// console.log (name);
+
+// 2 .pop () delete from last and return the deleted value
+
+// let name =["usama","misbah","haseeb"];
+// let deleteName = name.pop();
+// console.log(name);
+// console.log(deleteName);
+
+// 3 .tostring(); to convert array into string
+let name = ["usama", "misbah", "haseeb"];
+// console.log(name); //output will come in array form
+let string = name.toString();
+console.log(string); // output will come in string form
