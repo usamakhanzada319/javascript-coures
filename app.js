@@ -742,8 +742,46 @@
 // console.log(name);
 // console.log(deleteName);
 
-// 3 .tostring(); to convert array into string
-let name = ["usama", "misbah", "haseeb"];
-// console.log(name); //output will come in array form
-let string = name.toString();
-console.log(string); // output will come in string form
+// // 3 .tostring(); to convert array into string
+// let name = ["usama", "misbah", "haseeb"];
+// // console.log(name); //output will come in array form
+// let string = name.toString();
+// console.log(string); // output will come in string form
+
+
+// 4 .concat() to join two or more arrays and return a new array 
+// not change in original array
+// let name_1 =["usama","misbah","haseeb"];
+// let name_2 =["jameel"];
+// let name_3 =["asbah"];
+// let name_4 = name_1 .concat(name_2,name_3);
+// console.log(name_4);
+
+// let name_1 =["usama","misbah","haseeb"];
+// let name_2 =[" jameel "];
+// let name_3 =[" asbah "];
+// let name_4 = name_1 + name_2 + name_3;
+// console.log(name_4);
+
+
+// 5 .unshift() add new element at the start of array and retrun the new length of array
+
+// let name =["usama","misbah","haseeb"];
+// name.unshift("jameel","asbah");
+// console.log(name);
+
+//  6 .shift() remove first element of array and retrun the removed value 
+// let name =["usama","misbah","haseeb"];
+// let removeName = name.shift();
+// console.log(removeNam7e);
+
+// 7 slice() retruns a piece of the array 
+// slice (startidx, endidex);
+// not change in orignal array 
+// ending index is non exclusive means not include and optional
+// if just pass start index then it will take all the element stert index to end of array
+
+
+let num =[1,2,3,4,5,6,7,8,9];
+let newNum = num.slice(1,5);//2345
+console.log(newNum);
