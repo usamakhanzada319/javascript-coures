@@ -748,8 +748,7 @@
 // let string = name.toString();
 // console.log(string); // output will come in string form
 
-
-// 4 .concat() to join two or more arrays and return a new array 
+// 4 .concat() to join two or more arrays and return a new array
 // not change in original array
 // let name_1 =["usama","misbah","haseeb"];
 // let name_2 =["jameel"];
@@ -763,25 +762,76 @@
 // let name_4 = name_1 + name_2 + name_3;
 // console.log(name_4);
 
-
 // 5 .unshift() add new element at the start of array and retrun the new length of array
 
 // let name =["usama","misbah","haseeb"];
 // name.unshift("jameel","asbah");
 // console.log(name);
 
-//  6 .shift() remove first element of array and retrun the removed value 
+//  6 .shift() remove first element of array and retrun the removed value
 // let name =["usama","misbah","haseeb"];
 // let removeName = name.shift();
 // console.log(removeNam7e);
 
-// 7 slice() retruns a piece of the array 
+// 7 slice() retruns a piece of the array
 // slice (startidx, endidex);
-// not change in orignal array 
+// not change in orignal array
 // ending index is non exclusive means not include and optional
 // if just pass start index then it will take all the element stert index to end of array
 
+// let num =[1,2,3,4,5,6,7,8,9];
+// let newNum = num.slice(1,5);//2345
+// console.log(newNum);
 
-let num =[1,2,3,4,5,6,7,8,9];
-let newNum = num.slice(1,5);//2345
-console.log(newNum);
+// 8 .splice(stratidx , deletecount, replacevalue);
+
+// start from 2 index ,delet 1 item and replace with 6
+// let num =[1,2,3,4,5,6,7,8,9];
+// num.splice(2,1,6);
+// console.log(num);
+
+// for delete  form start index to last
+
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let deleted = num.splice(2);
+// console.log(deleted);
+// console.log(num);
+
+// delet element
+
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// num.splice(2,1);
+// console.log(num);
+
+// practice qusetion
+
+let coy = ["Bloomberg","Microsoft","Uber","Googal","IBM","Netflix"];
+
+
+// remove first company from the array 
+
+// coy.shift()
+// coy.splice(0,1);
+// console.log(coy);
+
+
+
+// coy.splice(0,1);
+// console.log(coy);
+
+
+
+// remove uber and add ola in its space
+
+// coy.splice(2,1,"ola");
+// console.log(coy);
+
+// add amazon in the end 
+
+
+// coy.push("amazon");
+// console.log(coy);
+
+
+coy.splice(6,0,"amazon");
+console.log(coy);
