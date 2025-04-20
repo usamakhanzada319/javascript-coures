@@ -833,5 +833,34 @@ let coy = ["Bloomberg","Microsoft","Uber","Googal","IBM","Netflix"];
 // console.log(coy);
 
 
-coy.splice(6,0,"amazon");
-console.log(coy);
+// coy.splice(6,0,"amazon");
+// console.log(coy);
+
+
+// function in js
+// block of code that perfome a specific task can be invokes by name when ever needed
+// create one time and invokes/ call when ever needed this function or block of code
+// a piece of code that perfome some taskes again and again 
+// us perentheses () to invoke or call function 
+// function takes input and do some work and return output 
+// we could creat own function 
+// function definition // function difine 
+
+
+// function functionName (){
+// }  // do not use semicolun in end 
+//  function call
+// functionName ();
+// function save us from 
+// "Functions save us from redundancy in code."
+// "Functions help us avoid repetition in our code."
+
+// What is Redundancy in Code?
+// Redundancy means repeating the same code again and again, which:
+
+// Makes code longer
+
+// Harder to read and maintain
+
+// Increases chances of errors
+
