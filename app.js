@@ -805,53 +805,44 @@
 
 // practice qusetion
 
-let coy = ["Bloomberg","Microsoft","Uber","Googal","IBM","Netflix"];
+let coy = ["Bloomberg", "Microsoft", "Uber", "Googal", "IBM", "Netflix"];
 
-
-// remove first company from the array 
+// remove first company from the array
 
 // coy.shift()
 // coy.splice(0,1);
 // console.log(coy);
 
-
-
 // coy.splice(0,1);
 // console.log(coy);
-
-
 
 // remove uber and add ola in its space
 
 // coy.splice(2,1,"ola");
 // console.log(coy);
 
-// add amazon in the end 
-
+// add amazon in the end
 
 // coy.push("amazon");
 // console.log(coy);
 
-
 // coy.splice(6,0,"amazon");
 // console.log(coy);
-
 
 // function in js
 // block of code that perfome a specific task can be invokes by name when ever needed
 // create one time and invokes/ call when ever needed this function or block of code
-// a piece of code that perfome some taskes again and again 
-// us perentheses () to invoke or call function 
-// function takes input and do some work and return output 
-// we could creat own function 
-// function definition // function difine 
-
+// a piece of code that perfome some taskes again and again
+// us perentheses () to invoke or call function
+// function takes input and do some work and return output
+// we could creat own function
+// function definition // function difine
 
 // function functionName (){
-// }  // do not use semicolun in end 
+// }  // do not use semicolun in end
 //  function call
 // functionName ();
-// function save us from 
+// function save us from
 // "Functions save us from redundancy in code."
 // "Functions help us avoid repetition in our code."
 
@@ -864,3 +855,49 @@ let coy = ["Bloomberg","Microsoft","Uber","Googal","IBM","Netflix"];
 
 // Increases chances of errors
 
+
+
+
+
+
+// function myFun() {
+//     console.log("usama");
+//     console.log("khanzada");
+    
+//   }
+//   myFun();
+
+
+// recursion 
+// function myFun() {
+//   console.log("usama");
+//   console.log("khanzada");
+//   myFun();
+// }
+// myFun();
+
+
+// resolve
+// let count = 0;
+
+// function myFun() {
+//   if (count >= 5) return; // base case to stop after 5 times
+
+//   console.log("usama");
+//   console.log("khanzada");
+//   count++;
+//   myFun(); // recursive call
+// }
+
+// myFun();
+
+// parameter and argument in function 
+// parameter is input or variable that we pass in function definition 
+// and argument is the value that we pass in functin call
+
+
+// function myFun(msg){
+//     console.log(msg);
+
+// }
+// myFun("usama");
