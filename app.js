@@ -894,6 +894,8 @@ let coy = ["Bloomberg", "Microsoft", "Uber", "Googal", "IBM", "Netflix"];
 // parameter and argument in function 
 // parameter is input or variable that we pass in function definition 
 // and argument is the value that we pass in functin call
+// in function we will pass meltiple parameters and arguments
+// parameters os function in like local variables that alive inside the block scope 
 
 
 // function myFun(msg){
@@ -901,3 +903,32 @@ let coy = ["Bloomberg", "Microsoft", "Uber", "Googal", "IBM", "Netflix"];
 
 // }
 // myFun("usama");
+
+
+
+
+// function sum(x,y){
+//     console.log("sum of x+y is ",x+y);
+//     console.log("mines of x-y is ",x-y);
+//     console.log("maltiply of x*y is ",x*y); 
+//     console.log("division of x/y is ",x/y);
+// }
+// sum(2,2); 
+
+
+// return statment 
+// function take input and do some woerk and return some value and output
+// it will return  1 value only in one time 
+// and return any data type
+// return keyword k bad koi bi code execute nahi hoga 
+// return is used to exit from the function and rturn a value to the caller 
+
+
+// function mysum (x,y){
+
+//     s = x+y;
+//     return s;
+
+// }
+// let result =mysum (2,2);
+// console.log(result);
