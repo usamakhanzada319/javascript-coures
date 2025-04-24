@@ -855,27 +855,20 @@ let coy = ["Bloomberg", "Microsoft", "Uber", "Googal", "IBM", "Netflix"];
 
 // Increases chances of errors
 
-
-
-
-
-
 // function myFun() {
 //     console.log("usama");
 //     console.log("khanzada");
-    
+
 //   }
 //   myFun();
 
-
-// recursion 
+// recursion
 // function myFun() {
 //   console.log("usama");
 //   console.log("khanzada");
 //   myFun();
 // }
 // myFun();
-
 
 // resolve
 // let count = 0;
@@ -891,12 +884,11 @@ let coy = ["Bloomberg", "Microsoft", "Uber", "Googal", "IBM", "Netflix"];
 
 // myFun();
 
-// parameter and argument in function 
-// parameter is input or variable that we pass in function definition 
+// parameter and argument in function
+// parameter is input or variable that we pass in function definition
 // and argument is the value that we pass in functin call
 // in function we will pass meltiple parameters and arguments
-// parameters os function in like local variables that alive inside the block scope 
-
+// parameters os function in like local variables that alive inside the block scope
 
 // function myFun(msg){
 //     console.log(msg);
@@ -904,25 +896,20 @@ let coy = ["Bloomberg", "Microsoft", "Uber", "Googal", "IBM", "Netflix"];
 // }
 // myFun("usama");
 
-
-
-
 // function sum(x,y){
 //     console.log("sum of x+y is ",x+y);
 //     console.log("mines of x-y is ",x-y);
-//     console.log("maltiply of x*y is ",x*y); 
+//     console.log("maltiply of x*y is ",x*y);
 //     console.log("division of x/y is ",x/y);
 // }
-// sum(2,2); 
+// sum(2,2);
 
-
-// return statment 
+// return statment
 // function take input and do some woerk and return some value and output
-// it will return  1 value only in one time 
+// it will return  1 value only in one time
 // and return any data type
-// return keyword k bad koi bi code execute nahi hoga 
-// return is used to exit from the function and rturn a value to the caller 
-
+// return keyword k bad koi bi code execute nahi hoga
+// return is used to exit from the function and rturn a value to the caller
 
 // function mysum (x,y){
 
@@ -932,3 +919,49 @@ let coy = ["Bloomberg", "Microsoft", "Uber", "Googal", "IBM", "Netflix"];
 // }
 // let result =mysum (2,2);
 // console.log(result);
+
+// arrow function
+// a compact way to write a function
+// part of morden js in ES6
+// we can store the function in a variable
+// generaly use for short function
+
+// const sum = (x, y) => {
+//   console.log(x + y);
+// };
+
+// console.log(sum);
+// here we console the variable not calling the function output will come value of variable
+// (x, y) => {
+//   console.log(x + y);
+// }  value of sum variable
+
+// now calling the arrow function
+
+// const sum =(x,y)=>{
+//     console.log(x+y);
+// }
+// sum(2,2);//here call the fuction
+
+// for multiplaction
+
+// const mult = (x, y) => {
+//   console.log(x * y);
+
+// };
+// mult(2, 2);
+
+// const mult = (x,y)=>{
+//     return x*y;
+// };
+
+// console.log(mult(2,2));
+
+// there is two type of function declaration and expression (those who store in  variable)
+// function declaration those who are not store in variable  do not use samicolon ; in end of scope 
+// function num (){}
+// function expression (assigend tya a variable) use  samicolon in end of scope 
+// const function num(){};
+// const num()=>{}; arrow function
+// in js all variables expression and statment ends with samicolon;
+
