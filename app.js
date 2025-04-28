@@ -805,7 +805,7 @@
 
 // practice qusetion
 
-let coy = ["Bloomberg", "Microsoft", "Uber", "Googal", "IBM", "Netflix"];
+// let coy = ["Bloomberg", "Microsoft", "Uber", "Googal", "IBM", "Netflix"];
 
 // remove first company from the array
 
@@ -958,10 +958,65 @@ let coy = ["Bloomberg", "Microsoft", "Uber", "Googal", "IBM", "Netflix"];
 // console.log(mult(2,2));
 
 // there is two type of function declaration and expression (those who store in  variable)
-// function declaration those who are not store in variable  do not use samicolon ; in end of scope 
+// function declaration those who are not store in variable  do not use samicolon ; in end of scope
 // function num (){}
-// function expression (assigend tya a variable) use  samicolon in end of scope 
+// function expression (assigend tya a variable) use  samicolon in end of scope
 // const function num(){};
 // const num()=>{}; arrow function
 // in js all variables expression and statment ends with samicolon;
 
+// const printfun =()=>{
+//     console.log("usama");
+//     return;
+// };
+
+// printfun();
+
+// function mysum(x, y) {
+//   return x + y;
+// }
+
+// console.log(mysum(2, 2));
+
+// const getName = () => {
+//   return "usama";
+// };
+// let name1 = getName;
+// console.log(getName);
+// console.log(name1);
+// console.log(name1());
+
+// const getName =()=> console.log("usama");
+// getName();
+
+// function vowels(str) {
+
+// for( let i =0; i<str.length;i++){
+//     if(str[i]==="a"|| str[i] ==="e"|| str[i]==="i"||str[i]==="o"||str[i]==="u")
+//         console.log(str[i]);
+// };
+
+// }
+// let str ="usama";
+// vowels(str);
+
+// const vowels = (str)=>{
+//     for(let i=0; i<str.length;i++){
+
+//         if(str[i]==="a"|| str[i]==="e"|| str[i]==="i"|| str[i]==="o" || str[i]==="u")
+// console.log(str[i]);
+//     };
+// };
+// let str=("usama");
+
+// vowels(str);
+
+const vowels = (str) => {
+  for (let i=0; i<str.length;i++) {
+    if ("aeiou".includes(str[i])) {
+      console.log(str[i]);
+          }
+  }
+};
+let str = "usama";
+vowels(str);
