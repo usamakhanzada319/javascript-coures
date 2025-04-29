@@ -1000,23 +1000,70 @@
 // let str ="usama";
 // vowels(str);
 
-// const vowels = (str)=>{
-//     for(let i=0; i<str.length;i++){
-
-//         if(str[i]==="a"|| str[i]==="e"|| str[i]==="i"|| str[i]==="o" || str[i]==="u")
-// console.log(str[i]);
-//     };
+// const vowels = (str) => {
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (
+//       str[i] === "a" ||
+//       str[i] === "e" ||
+//       str[i] === "i" ||
+//       str[i] === "o" ||
+//       str[i] === "u"
+//     ) {
+//       console.log(str[i]);
+//       count++;
+//     }
+//   }
+//   return count;
 // };
-// let str=("usama");
+// let str = "usama";
+// let count = vowels(str);
+// console.log(count);
 
+
+
+// const vowels = (str) => {
+
+//   for (let i = 0; i < str.length; i++) {
+//     if ("aeiou".includes(str[i])) {
+//       console.log(str[i]);
+//     }
+//   }
+// };
+// let str = "usama";
 // vowels(str);
 
-const vowels = (str) => {
-  for (let i=0; i<str.length;i++) {
-    if ("aeiou".includes(str[i])) {
-      console.log(str[i]);
-          }
-  }
-};
-let str = "usama";
-vowels(str);
+
+
+
+// forEach => its a function but it will associst/bind/combine with array and string also work with data stacher/where 
+// we store our data now we conseder ita as a method of array 
+// methods => are a function thay will combine or bind or join object ,data stacher or primitive data type 
+// forEach scyntax
+// array.forEach(element,index,array){
+// }
+// array.forEach(callbackfunction){
+// }
+// function in js pass like a parameter in function also return 
+// function in js pass or return like a normal variable
+
+
+// function abc(){  //first function 
+// } 
+
+
+
+// function myfun (abc){  // pass first function in 2nd function 
+// return abc;   // and return 2nd function 
+// }
+
+
+// call back function => a callback function passed as argument to another function ,also it is a function to execute
+//  for  each element in the array
+// just creat a function defination no need for call invoke or execute
+
+let arr =[1,2,3,4,5];
+arr.forEach(function printval(val) {
+  console.log(val);
+
+});
