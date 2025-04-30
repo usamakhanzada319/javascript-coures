@@ -1020,8 +1020,6 @@
 // let count = vowels(str);
 // console.log(count);
 
-
-
 // const vowels = (str) => {
 
 //   for (let i = 0; i < str.length; i++) {
@@ -1033,37 +1031,96 @@
 // let str = "usama";
 // vowels(str);
 
-
-
-
-// forEach => its a function but it will associst/bind/combine with array and string also work with data stacher/where 
-// we store our data now we conseder ita as a method of array 
-// methods => are a function thay will combine or bind or join object ,data stacher or primitive data type 
+// forEach => its a function but it will associst/bind/combine with array and string also work with data stacher/where
+// we store our data now we conseder ita as a method of array
+// methods => are a function thay will combine or bind or join object ,data stacher or primitive data type
 // forEach scyntax
 // array.forEach(element,index,array){
 // }
 // array.forEach(callbackfunction){
 // }
-// function in js pass like a parameter in function also return 
+// function in js pass like a parameter in function also return
 // function in js pass or return like a normal variable
 
-
-// function abc(){  //first function 
-// } 
-
-
-
-// function myfun (abc){  // pass first function in 2nd function 
-// return abc;   // and return 2nd function 
+// function abc(){  //first function
 // }
 
+// function myfun (abc){  // pass first function in 2nd function
+// return abc;   // and return 2nd function
+// }
 
 // call back function => a callback function passed as argument to another function ,also it is a function to execute
 //  for  each element in the array
 // just creat a function defination no need for call invoke or execute
 
-let arr =[1,2,3,4,5];
-arr.forEach(function printval(val) {
-  console.log(val);
+// let arr =[1,2,3,4,5];
+// arr.forEach(function printval(val) {
+//   console.log(val);
 
-});
+// });
+
+// normaly in the forEach pass callback funnction in the form of an arrow function
+// syntax  arr.forEach(()=>){
+// //do some work
+// });
+
+// const arr =[1,2,3,4,5];
+// arr.forEach((val)=>{
+//   console.log(val);
+
+// });
+
+// const arr = ["usama", "haseeb", "misbah", "asbah"];
+// arr.forEach  ((name) => {
+//   console.log(name);
+// });
+
+// const arr =["usama","haseeb","misbah","asbah"];
+// arr.forEach((name)=>{
+//   console.log(name.toUpperCase());
+// });
+
+// in forEach  callback function takes 3 parameters
+// 1st is current value of array 
+// ,2nd index number of current value
+// 3rd is array itself
+
+// const arr =["usama","haseeb","misbah"];
+// arr.forEach((val,idx,arr)=>{
+//   console.log(val,idx,arr);
+//   console.log(`value is ${val} and index is ${idx} and array is ${arr}`);
+// });
+
+// important question
+// higher order function/methods HOF/HOM
+// a function that takes another function as an argument  or return a function as a output 
+// .forEach() is a function that takes a callback fucntion as an argument and then we pass tha val,idx,arr in callback function perameters
+
+
+// partice question
+// with arrow function 
+// let arr = [1,2,3,4,5];
+// arr.forEach((val)=>{
+// let square = val*val;
+// console.log(`square of ${val} is ${square}`);
+// });
+// an other way 
+
+// let number =[1,2,3,4,5];
+// let square = (val)=>{
+//   let result = 
+// console.log(result);
+// };
+// number.forEach(square);
+
+
+
+
+// with normal function
+
+// let arr = [1,2,3,4,5];
+// function square(val){
+//   let result = val*val;
+// console.log(result);
+// }
+// arr.forEach(square);
