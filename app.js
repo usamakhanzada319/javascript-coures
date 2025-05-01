@@ -1081,7 +1081,7 @@
 // });
 
 // in forEach  callback function takes 3 parameters
-// 1st is current value of array 
+// 1st is current value of array
 // ,2nd index number of current value
 // 3rd is array itself
 
@@ -1093,28 +1093,24 @@
 
 // important question
 // higher order function/methods HOF/HOM
-// a function that takes another function as an argument  or return a function as a output 
+// a function that takes another function as an argument  or return a function as a output
 // .forEach() is a function that takes a callback fucntion as an argument and then we pass tha val,idx,arr in callback function perameters
 
-
 // partice question
-// with arrow function 
+// with arrow function
 // let arr = [1,2,3,4,5];
 // arr.forEach((val)=>{
 // let square = val*val;
 // console.log(`square of ${val} is ${square}`);
 // });
-// an other way 
+// an other way
 
 // let number =[1,2,3,4,5];
 // let square = (val)=>{
-//   let result = 
+//   let result =
 // console.log(result);
 // };
 // number.forEach(square);
-
-
-
 
 // with normal function
 
@@ -1124,3 +1120,114 @@
 // console.log(result);
 // }
 // arr.forEach(square);
+
+// map method
+// map create a new array with the results of some operation . the value its callback returns are used to from new array
+// map is vary simmilar to forEach but it will return a new array and not change the original array
+// syntax
+// arr.map((val,idx,array)=>{
+// return new value
+// });
+// .map used to create a new array using some return value based on each value which is stored at the some indices of the array
+// gernerally use for creating a new array based on the original array.
+
+// let num = [1,2,3,4,5];
+// let square =num.map((val)=>{
+//     return val*val;
+// });
+// console.log(square);
+// consolelog(num); // origanl arrray not change
+
+// let num = [1, 2, 3, 4, 5]; val => val * val;
+// console.log(num.map(val => val * val));
+// console.log(num); // origanl array not change
+
+// filter method = create a new array  of element that giv true for a condition or filter it not change in original array
+// give us a copy or transform of array but in a new array
+// array  ka her element ko chack karta h based on a condition (true or false), srif un element ko return karta h jo condition true data hain
+// Syntax
+
+// tet newarray = oldarray.filter((element,index,array)=>{
+// return conditin;
+// })
+// console.log(newarray);
+
+// let num = [1, 2, 3, 4];
+// let result = num.filter((val) => {
+//   return val % 2 === 0;
+
+// });
+// console.log(result);
+// console.log(num);
+
+// let num = [];
+// for (let i = 1; i <= 100; i++) {
+//   num.push(i);
+// }
+// let result = num.filter((val) => {
+//   return val % 2 === 0;
+// });
+
+// console.log(result);
+// console.log(num);
+
+// reduce method preforms some operation and reduce the array to a single value output
+//its return a single value  and not change in original array
+// syntax
+
+// let num = [1, 2, 3, 4, 5];
+// let result = num.reduce((res, currval) => {
+//   return res + currval;
+// });
+// console.log(result);
+// console.log(num);
+
+// is k 4 parameters hote hn
+// Parameter	Purpose
+// accumulator	previous value / result
+// currentValue	current element being processed
+// currentIndex	(optional) index of current element
+// array	(optional) original array being processed
+
+// 🔸 initialValue kya hota hai?
+// Jab reduce() chalta hai, to usko ek starting point chahiye hota hai — 
+// jise accumulator ki shuruaati value kehte hain. Ye starting point hi initialValue hota hai
+
+// 🔹 Without initialValue:
+
+// let arr = [1, 2, 3];
+// let result = arr.reduce((acc, curr) => {
+//   return acc + curr;
+// });
+// console.log(result); // 6
+
+// Yahaan acc ki pehli value array ka pehla element (1) hi ban jata hai.
+
+// 🔹 With initialValue:
+
+// let arr = [1, 2, 3];
+// let result = arr.reduce((acc, curr) => {
+//   return acc + curr;
+// }, 10); // // 10 yahaan initialValue hai
+// console.log(result); // 16
+
+// Yahaan acc ki pehli value 10 set ki gayi hai manually.
+// To pehla calculation hota hai: 10 + 1 = 11, phir 11 + 2 = 13, phir 13 + 3 = 16.
+
+// Situation	initialValue zaroori hai?
+// Empty array	✅ Haan, warna error dega
+// Custom starting point chahiye	✅ Haan
+// Pehle element se start karna hai	❌ Nahin zaroori
+
+
+// how is work 
+
+// let arr = [1, 2, 3];
+// let result = arr.reduce((acc, curr) => {
+//   return acc + curr;
+// });
+// console.log(result); // 6
+
+//  start from initial value jo given nahi h to acc array k pehle element se start hoga
+// acc = 1 or curr = 2 then 1 + 2 = 3 than acc = 3 and curr = 3 then 3 + 3 = 6
+// or phr ye return hoga or result m store hoga
