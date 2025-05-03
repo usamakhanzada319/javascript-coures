@@ -1190,7 +1190,7 @@
 // array	(optional) original array being processed
 
 // 🔸 initialValue kya hota hai?
-// Jab reduce() chalta hai, to usko ek starting point chahiye hota hai — 
+// Jab reduce() chalta hai, to usko ek starting point chahiye hota hai —
 // jise accumulator ki shuruaati value kehte hain. Ye starting point hi initialValue hota hai
 
 // 🔹 Without initialValue:
@@ -1219,8 +1219,7 @@
 // Custom starting point chahiye	✅ Haan
 // Pehle element se start karna hai	❌ Nahin zaroori
 
-
-// how is work 
+// how is work
 
 // let arr = [1, 2, 3];
 // let result = arr.reduce((acc, curr) => {
@@ -1231,3 +1230,83 @@
 //  start from initial value jo given nahi h to acc array k pehle element se start hoga
 // acc = 1 or curr = 2 then 1 + 2 = 3 than acc = 3 and curr = 3 then 3 + 3 = 6
 // or phr ye return hoga or result m store hoga
+
+// lets find the largest number
+
+// let num = [1, 20, 101, 204, 5, 3, 9, 89, 45];
+// let result = num.reduce((acc, curr) => {
+//   return acc > curr ? acc : curr;
+// });
+// console.log(result);
+// with if else
+// let num = [1, 20, 101, 204, 5, 3, 9, 89, 45];
+
+// let result = num.reduce((acc, curr) => {
+//   if (acc > curr) {
+//     return acc;
+//   } else {
+//     return curr;
+//   }
+// });
+// console.log(result);
+
+// lets find smallest number
+
+// let num = [1, 20, 101, 204, 5, 3, 9, 89, 45];
+// let result = num.reduce((acc, curr) => {
+//   return acc < curr ? acc : curr;
+// });
+// console.log(result);
+// with if else
+// let num = [1, 20, 101, 204, 5, 3, 9, 89, 45];
+// let result = num.reduce((acc,curr)=>{
+//     if (acc<curr){
+//         return acc;
+//       }else{
+//         return curr;
+//           }
+// });
+
+// console.log(result);
+
+
+// Filter out marks of students that scored 90 plus
+
+// let student =[54,91,45,78,92,67,95,100];
+// let result = student.filter((val)=>{
+//     return val >= 91;
+// });
+// console.log(result);
+// Use the reduce method to calculate the sum of numbers in the array
+// best way always create a main function is sy cord organize hota h or reuseable hojata h nahi to global hojata h
+// let sum = [];
+// let userNum = parseFloat(prompt("enter a number"));
+// function getsum() {
+//   for (let i = 1; i <= userNum; i++) {
+//     sum.push(i);
+//   }
+
+//   let newsum = sum.reduce((acc, curr) => {
+//     return acc + curr;
+//   });
+
+//   console.log(newsum);
+// }
+// getsum();
+
+
+
+// Use the reduce method to calculate the product of numbers in the array
+// let product = [];
+// let usernum = parseFloat(prompt("enter a number"));
+// function getproduct() {
+//   for (let i = 1; i <= usernum; i++) {
+//     product.push(i);
+//    
+//   }
+//   let newproduct = product.reduce((acc, curr) => {
+//     return acc*curr;
+//   },1);
+//   console.log(newproduct);
+// }
+// getproduct();
