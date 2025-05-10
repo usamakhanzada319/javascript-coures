@@ -1310,3 +1310,27 @@
 //   console.log(newproduct);
 // }
 // getproduct();
+
+
+
+
+// DOM document object model
+//  3 musketeers of web development => html , css and js frontend
+// < link rel="stylesheet" href="style.css" />
+// rel => relationship between the current document and the linked document
+// href => hypertext reference
+// when alert(), prompt(), confirm() aits popups appear they block our js code because the synchronous and model
+// synchronous => synchronous code is executed line by line and one by one
+//  modal => these dialogs take control of the browser UI stoppong all interaction with the page untile the dilog is dismiseed these 
+// senarieos is called block behavior create a  saprate file for  css and js its means readability moduler means makes short block or part of code 
+// browser caching => quicke  and faster acceses to web page again and again
+// window object => the window.object represent an open window in a browser .it is browser object (not js ) its autoatically created by browser 
+// if your code is block scope or modern feratures (like let,const, arrow function, class, template literals) it not a dirrect part of window
+
+
+// when a web page is lode the browser creates a window object and the document object is a property of the window object
+// when we create  a html it will esaylly acces in js and automoticallyall tags and attrubutes are changes as a specific object in js
+// and we call document and is also available in window object
+// window.documentm document ek sub object h window ka and is document  m sab kuch hoga jo hum html m likhte h
+// we cant use console.log it will print the window object or html 
+// we use console.dir()to access the document object and its properties and methods 
