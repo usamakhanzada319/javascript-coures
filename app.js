@@ -1269,7 +1269,6 @@
 
 // console.log(result);
 
-
 // Filter out marks of students that scored 90 plus
 
 // let student =[54,91,45,78,92,67,95,100];
@@ -1294,15 +1293,13 @@
 // }
 // getsum();
 
-
-
 // Use the reduce method to calculate the product of numbers in the array
 // let product = [];
 // let usernum = parseFloat(prompt("enter a number"));
 // function getproduct() {
 //   for (let i = 1; i <= usernum; i++) {
 //     product.push(i);
-//    
+//
 //   }
 //   let newproduct = product.reduce((acc, curr) => {
 //     return acc*curr;
@@ -1311,9 +1308,6 @@
 // }
 // getproduct();
 
-
-
-
 // DOM document object model
 //  3 musketeers of web development => html , css and js frontend
 // < link rel="stylesheet" href="style.css" />
@@ -1321,16 +1315,84 @@
 // href => hypertext reference
 // when alert(), prompt(), confirm() aits popups appear they block our js code because the synchronous and model
 // synchronous => synchronous code is executed line by line and one by one
-//  modal => these dialogs take control of the browser UI stoppong all interaction with the page untile the dilog is dismiseed these 
-// senarieos is called block behavior create a  saprate file for  css and js its means readability moduler means makes short block or part of code 
+//  modal => these dialogs take control of the browser UI stoppong all interaction with the page untile the dilog is dismiseed these
+// senarieos is called block behavior create a  saprate file for  css and js its means readability moduler means makes short block or part of code
 // browser caching => quicke  and faster acceses to web page again and again
-// window object => the window.object represent an open window in a browser .it is browser object (not js ) its autoatically created by browser 
+// window object => the window.object represent an open window in a browser .it is browser object (not js ) its autoatically created by browser
 // if your code is block scope or modern feratures (like let,const, arrow function, class, template literals) it not a dirrect part of window
-
 
 // when a web page is lode the browser creates a window object and the document object is a property of the window object
 // when we create  a html it will esaylly acces in js and automoticallyall tags and attrubutes are changes as a specific object in js
 // and we call document and is also available in window object
 // window.documentm document ek sub object h window ka and is document  m sab kuch hoga jo hum html m likhte h
-// we cant use console.log it will print the window object or html 
-// we use console.dir()to access the document object and its properties and methods 
+// we cant use console.log it will print the window object or html
+// we use console.dir()to access the document object and its properties and methods
+
+// Har HTML element JavaScript me ek object hota hai jiske paas properties aur methods hote hain, jise tum DOM ke zariye modify kar sakte ho.
+// 🔍 Us object ke andar kya hota hai?
+// Properties:
+
+// id, className, innerText, tagName, style, children, attributes, etc.
+
+// Methods (jo use modify karne ke liye hote hain):
+
+// .appendChild(), .remove(), .setAttribute(), .getAttribute(), .classList.add(), etc.
+
+// DOM manipulation => to access element
+// selet with id =>document.getElementbyid("idname")
+// its return value of element also store in a varaiable #id =""
+
+// let newheding = document.getElementById("heading");
+// console.dir(newheding);
+// OUTPUT h1#heading
+// h1 → Ye element ka tag name hai (Heading level 1).
+
+// #heading → Ye uska id attribute hai (id="heading").
+
+// console.dir() JavaScript object ki properties ko expandable tree form me console pe dikhata hai.
+//  Jab tum getElementById("heading") se kisi HTML element ko select karte ho,
+//  to browser console pe wo element ki summary dikhata hai is form me:
+// To JavaScript me ye ek HTMLElement object ban jaata hai, jiske andar:
+
+// tagName: "H1"
+
+// id: "heading"
+
+// innerText: "Hello"
+
+// classList: [] (empty list)
+
+// id => to be unique for each element
+// // selet with classname =>document.getElementsbyClassName("calssname");
+// let element = document.getElementsByClassName("pere");
+// console.dir(element);
+// console.log(element);
+
+// dir output
+// HTMLCollection(3)
+// 0 : p.pere
+// 1:p.pere
+// 2 : p.pere
+// length:3
+
+// log output
+// HTMLCollection(3)
+// 0 : p.pere
+// 1:p.pere
+// 2 : p.pere
+// length:3
+
+// HTMLCollection kya hai?
+// HTMLCollection ek array-like object hota hai jo HTML elements ka group hold karta hai. 
+// Ye JavaScript me tab milta hai jab hum DOM ke methods se multiple elements ko select karte hain.
+// Feature	Description
+// Array-like	Length hoti hai, index se access kar sakte ho (paragraphs[0]), lekin ye pure array nahi hota
+// Live Collection	Agar DOM me change karo, ye automatically update ho jata hai
+// Looping	for, for...of, ya forEach() (after converting to real array)
+// Common Sources	getElementsByTagName(), getElementsByClassName(), children property
+
+// hTMLCollection = ❌ Not a true array → can't use .map(), .filter(), .reduce()
+// Array.from() or [...] = ✅ Converts it into real array
+
+// if we console id which is not exist answer will come null
+// when ew console calss which not exist answer will come empty html collection
