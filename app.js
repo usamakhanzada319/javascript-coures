@@ -1396,3 +1396,120 @@
 
 // if we console id which is not exist answer will come null
 // when ew console calss which not exist answer will come empty html collection
+
+
+// 3=> selectingwith tagName documents.getElementByTagName("TagName");
+// let element =document.getElementsByTagName("p");
+// console.dir(element);
+// return html collection 
+// by className,by tagName ye methids mutable(chnage able )hn q k ye live collection return krty hn. ye DOM k sath dynamically linked hoty hn
+//  orjb ji dom m koi change (add new element or delete existing element ) hota h to to collection automaticlly update hojata h 
+// ye method dom ka crunt state represent kerta h is waja sy dom mkoi bi change collection bi update hojata h 
+// if dont need live collection or want immutable use array.form() or ... spread operator 
+// const element = Array.from(document.getElementsByClassName("heading"));
+// console.log(element);
+
+// const element = Array.from(document.getElementsByClassName("heading"));
+// // console.log(element);
+// console.dir(element);
+// element[0].textContent ="jameel khanzada"
+// console.log(element[0].textContent);
+
+
+// 4=> querySelector() => ye method hamesha pehla element return kerta h jo selector match karta h
+// let element = document.querySelector("p","heading","el");
+// console.log(element);
+// console.dir(element);
+
+// 5=> querySelectorAll() => return a node list of all elements that match the selector
+// let element = document.querySelectorAll("p, .heading, #el");
+// console.log(element);
+
+
+// NodeList(5) [p, h1.heading, h4#el]
+// 0:p
+// 1:h1.heading
+// 2:h4#el
+// length:3
+// console.dir(element);
+// 0:p
+// 1:h1.heading
+// 2:h4#el
+// length:3
+
+
+// properties of DOM
+// 1=> tagName => ye element ka tag name return karta h
+// let element = document.querySelector("p");
+// console.log(element.tagName);
+// console.dir(element.tagName);
+
+// firstChild
+// Definition:
+
+// firstChild DOM ke element ka pehla node (bacha) return karta hai.
+// Ye kisi bhi type ka node ho sakta hai:
+// Text node
+// Comment node
+// Element node (HTML elements)
+// Important Point:
+
+// Agar element ka pehla bacha text node hai (jaise empty space ya line break), to firstChild us text node ko return karega.
+// Example:
+
+// HTML
+// <div id="demo">
+//   <!-- Comment -->
+//   <p>Paragraph</p>
+// </div>
+// JavaScript
+// const demo = document.getElementById("demo");
+// console.log(demo.firstChild); // Output: Comment node (<!-- Comment -->)
+
+
+// 2. lastChild
+// Definition:
+
+// lastChild DOM ke element ka aakhri node (bacha) return karta hai.
+// Ye bhi kisi bhi type ka node ho sakta hai:
+// Text node
+// Comment node
+// Element node (HTML elements)
+// Important Point:
+
+// Agar element ka aakhri bacha ek text node hai, to lastChild us text node ko return karega.
+// Example:
+
+// HTML
+// <div id="demo">
+//   <p>Paragraph</p>
+//   <!-- Comment -->
+// </div>
+// JavaScript
+// const demo = document.getElementById("demo");
+// console.log(demo.lastChild); // Output: Comment node (<!-- Comment -->)
+
+
+
+// 3. children
+// Definition:
+
+// children DOM ke element ke sirf HTML element nodes ka collection return karta hai.
+// Isme text nodes ya comment nodes include nahi hote.
+// Important Point:
+
+// Ye ek live collection hoti hai, iska matlab agar aap DOM ko change karte hain, to children collection bhi update ho jata hai.
+// Ye hamesha sirf elements ko return karega.
+// Example:
+
+// HTML
+// <div id="demo">
+//   Text Node
+//   <p>Paragraph 1</p>
+//   <p>Paragraph 2</p>
+//   <!-- Comment -->
+// </div>
+// JavaScript
+// const demo = document.getElementById("demo");
+// console.log(demo.children); 
+// Output: HTMLCollection [<p>Paragraph 1</p>, <p>Paragraph 2</p>]
