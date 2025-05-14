@@ -1513,3 +1513,69 @@
 // const demo = document.getElementById("demo");
 // console.log(demo.children); 
 // Output: HTMLCollection [<p>Paragraph 1</p>, <p>Paragraph 2</p>]
+
+// Nodes in DOM:
+// In the Document Object Model (DOM), everything is represented as nodes. There are different types of nodes, but the most common are element nodes, text nodes, and comment nodes. Let’s break them down in simple terms:
+
+// 1. Element Node
+// What It Is:
+
+// Represents an HTML element in the DOM (e.g., <div>, <p>, <span>, etc.).
+// You can manipulate these elements using JavaScript.
+// Key Points:
+
+// Element nodes have attributes (e.g., class, id, style).
+// They can have child nodes (like text nodes, comment nodes, or other element nodes).
+
+// const element = document.querySelector(".heading");
+// // console.log(element);// output: <h1 class="heading">usama khanzada</h1>
+// console.log(element);// //.nodeName//H1,.nodeType//1,.tagName//H1
+
+// 2. Text Node
+// What It Is:
+
+// Represents the text content inside an element.
+// It is a child of an element node.
+// Key Points:
+
+// Text nodes only contain the text itself, not the HTML tags.
+// Even a space or line break is treated as a text node.
+// Example:
+
+// HTML
+// <div>Hello, World!</div>
+// The text Hello, World! inside the <div> is a text node.
+// You can access it in JavaScript:
+// JavaScript
+
+// const element = document.querySelector(".heading");
+// const textNode = element.firstChild; // Access the text node
+// console.log(textNode); //.nodeValue//"usama khanzada",.nodeName// #text,.nodeType//3
+
+//html
+/* <div>   </div> */ //if insideb the tag empty, even space, line break is treated as a text node
+
+
+// Comment Node
+// What It Is:
+
+// Represents an HTML comment in the DOM.
+// Comments are not visible on the webpage but are part of the DOM.
+// Key Points:
+
+// It starts with <!-- and ends with -->.
+// Mainly used for notes or explanations within the HTML code.
+// Example:
+// const  element = document.querySelector("div");
+// const commentNode = element.previousSibling;
+// console.log(commentNode);
+
+
+
+
+// => previousSibling Does
+// The previousSibling property accesses the node immediately before the selected node in the DOM tree.
+// This can be:
+// Text Node (e.g., whitespace or line breaks)
+// Comment Node (e.g., <!-- Comment -->)
+// Element Node (e.g., <p>, <span>)
