@@ -1383,7 +1383,7 @@
 // length:3
 
 // HTMLCollection kya hai?
-// HTMLCollection ek array-like object hota hai jo HTML elements ka group hold karta hai. 
+// HTMLCollection ek array-like object hota hai jo HTML elements ka group hold karta hai.
 // Ye JavaScript me tab milta hai jab hum DOM ke methods se multiple elements ko select karte hain.
 // Feature	Description
 // Array-like	Length hoti hai, index se access kar sakte ho (paragraphs[0]), lekin ye pure array nahi hota
@@ -1397,15 +1397,14 @@
 // if we console id which is not exist answer will come null
 // when ew console calss which not exist answer will come empty html collection
 
-
 // 3=> selectingwith tagName documents.getElementByTagName("TagName");
 // let element =document.getElementsByTagName("p");
 // console.dir(element);
-// return html collection 
+// return html collection
 // by className,by tagName ye methids mutable(chnage able )hn q k ye live collection return krty hn. ye DOM k sath dynamically linked hoty hn
-//  orjb ji dom m koi change (add new element or delete existing element ) hota h to to collection automaticlly update hojata h 
-// ye method dom ka crunt state represent kerta h is waja sy dom mkoi bi change collection bi update hojata h 
-// if dont need live collection or want immutable use array.form() or ... spread operator 
+//  orjb ji dom m koi change (add new element or delete existing element ) hota h to to collection automaticlly update hojata h
+// ye method dom ka crunt state represent kerta h is waja sy dom mkoi bi change collection bi update hojata h
+// if dont need live collection or want immutable use array.form() or ... spread operator
 // const element = Array.from(document.getElementsByClassName("heading"));
 // console.log(element);
 
@@ -1415,7 +1414,6 @@
 // element[0].textContent ="jameel khanzada"
 // console.log(element[0].textContent);
 
-
 // 4=> querySelector() => ye method hamesha pehla element return kerta h jo selector match karta h
 // let element = document.querySelector("p","heading","el");
 // console.log(element);
@@ -1424,7 +1422,6 @@
 // 5=> querySelectorAll() => return a node list of all elements that match the selector
 // let element = document.querySelectorAll("p, .heading, #el");
 // console.log(element);
-
 
 // NodeList(5) [p, h1.heading, h4#el]
 // 0:p
@@ -1436,7 +1433,6 @@
 // 1:h1.heading
 // 2:h4#el
 // length:3
-
 
 // properties of DOM
 // 1=> tagName => ye element ka tag name return karta h
@@ -1466,7 +1462,6 @@
 // const demo = document.getElementById("demo");
 // console.log(demo.firstChild); // Output: Comment node (<!-- Comment -->)
 
-
 // 2. lastChild
 // Definition:
 
@@ -1489,8 +1484,6 @@
 // const demo = document.getElementById("demo");
 // console.log(demo.lastChild); // Output: Comment node (<!-- Comment -->)
 
-
-
 // 3. children
 // Definition:
 
@@ -1511,7 +1504,7 @@
 // </div>
 // JavaScript
 // const demo = document.getElementById("demo");
-// console.log(demo.children); 
+// console.log(demo.children);
 // Output: HTMLCollection [<p>Paragraph 1</p>, <p>Paragraph 2</p>]
 
 // Nodes in DOM:
@@ -1555,7 +1548,6 @@
 //html
 /* <div>   </div> */ //if insideb the tag empty, even space, line break is treated as a text node
 
-
 // Comment Node
 // What It Is:
 
@@ -1570,12 +1562,78 @@
 // const commentNode = element.previousSibling;
 // console.log(commentNode);
 
-
-
-
 // => previousSibling Does
 // The previousSibling property accesses the node immediately before the selected node in the DOM tree.
 // This can be:
 // Text Node (e.g., whitespace or line breaks)
 // Comment Node (e.g., <!-- Comment -->)
 // Element Node (e.g., <p>, <span>)
+
+// DOM Navigation
+// => parentNode
+// The parentNode property accesses the parent node of the selected node in the DOM tree.
+// let element = document.querySelector("#child");
+// let parent = element.parentNode;
+// console.log(parent);
+// Output: <div id="parent">...</div>
+
+// => childNode
+// The childNodes property returns a live NodeList of all child nodes of the selected node.
+// children property returns a live HTMLCollection of all child elements of the selected node.
+
+// let element = document.querySelector("#parent");
+// let parent = element.childNodes;
+// console.log(parent);
+
+// first and last child
+// access the first and last child of the selected node
+// properties
+// firstChild return the first child node of the selected node(ant type text, comment, element)
+// lastChild return the last child node of the selected node(ant type text, comment, element)
+// firstElementChild return the first child element of the selected node(only element)
+// lastElementChild return the last child element of the selected node(only element)
+
+
+// let element = document.querySelector("#parent");
+// let firstchild = element.firstChild;
+// let lastchild = element.lastChild;
+// let firstelementchild = element.firstElementChild;
+// let lastelementchild = element.lastElementChild;
+// console.log(firstchild);
+// console.log(lastchild);
+// console.log(firstelementchild);
+// console.log(lastelementchild);
+
+
+
+// sibling nodes 
+// access the sibling nodes of the selected node
+// properties
+//  nextSibling return the next sibling node of the selected node(ant type text, comment, element)
+// previousSibling return the previous sibling node of the selected node(ant type text, comment, element)
+// nextElementSibling return the next sibling element of the selected node(only element)
+// previousElementSibling return the previous sibling element of the selected node(only element)
+
+
+// let first = document.querySelector("p");
+// let second = document.querySelector("span");
+
+// let nextSibling = first.nextSibling;
+// let nextElementSibling =first.nextElementSibling;
+// let previousSibling = second.previousSibling;
+// let previousElementSibling =second.previousElementSibling;
+
+// console.log(nextSibling);
+// console.log(nextElementSibling);
+// console.log(previousSibling);
+// console.log(previousElementSibling);
+
+
+
+// closest(selector)
+// closest() method is used to find the closest ancestor of the selected element that matches the specified selector.
+// if dont match the selector then it will return null
+
+// let element = document.querySelector("#btn");
+// let closestElement = element.closest('#parent');
+// console.log(closestElement); 
