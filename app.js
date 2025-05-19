@@ -1593,7 +1593,6 @@
 // firstElementChild return the first child element of the selected node(only element)
 // lastElementChild return the last child element of the selected node(only element)
 
-
 // let element = document.querySelector("#parent");
 // let firstchild = element.firstChild;
 // let lastchild = element.lastChild;
@@ -1604,16 +1603,13 @@
 // console.log(firstelementchild);
 // console.log(lastelementchild);
 
-
-
-// sibling nodes 
+// sibling nodes
 // access the sibling nodes of the selected node
 // properties
 //  nextSibling return the next sibling node of the selected node(ant type text, comment, element)
 // previousSibling return the previous sibling node of the selected node(ant type text, comment, element)
 // nextElementSibling return the next sibling element of the selected node(only element)
 // previousElementSibling return the previous sibling element of the selected node(only element)
-
 
 // let first = document.querySelector("p");
 // let second = document.querySelector("span");
@@ -1628,12 +1624,61 @@
 // console.log(previousSibling);
 // console.log(previousElementSibling);
 
-
-
 // closest(selector)
 // closest() method is used to find the closest ancestor of the selected element that matches the specified selector.
 // if dont match the selector then it will return null
 
 // let element = document.querySelector("#btn");
 // let closestElement = element.closest('#parent');
-// console.log(closestElement); 
+// console.log(closestElement);
+
+// innertext return the text content of the selected element and its child elements
+// let element = document.querySelectorAll("#parent h1 ");
+// let listname = document.querySelectorAll("#parent ul li ");
+
+// // let text = element.innerText;
+// // console.log(text);
+// // set
+// element.innerText = " family";
+// listname[0].innerText = "usama";
+// listname[1].innerText = "misbah";
+// listname[2 ].innerText = "haseeb";
+// console.log(element);
+// console.log(listname);
+
+// innerHTML return the html content of the selected element and its child elements
+// get
+// let element = document.querySelector("#parent");
+// let text = element.innerHTML;
+// console.log(text);
+//set
+
+// element.innerHTML ="  <h1>family</h1> <ul> <li>usama</li> <li>misbah</li> <li>haseeb</li> </ul>";
+// console.log(element);
+
+// textContent return the text content of the selected element and its child elements
+
+// let element = document.querySelector("h1")
+// console.log(element);//show <h1 style="visibility: hidden">//fruits</h1>
+// let text = element.textContent;
+// console.log(text); //fruits
+
+// let element= document.querySelector("h2");
+// element.innerText = element.innerText +  " from apna collage";
+// console.log(text);
+
+let element = document.querySelectorAll(".box");
+let i = 0;
+for (div of element){
+    console.log(div);
+    div.innerText = `usama khanzada${i}`;
+    i++;
+}
+console.log(element);
+
+
+
+// element[0].innerText = "usama khanzada";
+// element[1].innerText = "jameel khanzada";
+// element[2].innerText = "haseeb khanzada";
+console.log(element);
