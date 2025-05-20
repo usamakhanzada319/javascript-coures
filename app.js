@@ -1665,20 +1665,64 @@
 
 // let element= document.querySelector("h2");
 // element.innerText = element.innerText +  " from apna collage";
-// console.log(text);
+// console.log(element.innerText);
 
+// let element = document.querySelectorAll(".box");
+// let i = 0;
+// for (div of element){
+//     console.log(div);
+//     div.innerText = `usama khanzada${i}`;
+//     i++;
+// }
+// console.log(element);
+
+// // element[0].innerText = "usama khanzada";
+// // element[1].innerText = "jameel khanzada";
+// // element[2].innerText = "haseeb khanzada";
+// console.log(element);
+
+// getAttribute() => ye method kisi bhi element ka attribute value return karta hai.
+// Element.getAttribute("attributeName")
+// let element = document.querySelector("#heading");
+// let attribute = element.getAttribute("id");
+// console.log(attribute);
+// // otherway
+// let ele = document.querySelector(".box");
+// console.log(ele.getAttribute("class"));
+
+// let element = document.querySelector("h2");
+// console.log(element.getAttribute("name"));
+
+// setAttribute() => ye method kisi bhi element ka attribute set karta hai
+// 
+// its chang first one.
+// let element = document.querySelector(".box");
+// element.setAttribute("class", "boxclass");
+// console.log(element);
+
+// for all class
+
+// let element = document.querySelectorAll(".box");
+// element.forEach((ele)=>{
+//     ele.setAttribute("class","boxclass");
+//     console.log(ele);
+// });
+    
+
+
+// node.style => ye method kisi bhi element ka style set karta hai
+
+// let element = document.querySelectora(".box");
+// element.style.backgroundColor = "red";
+
+// its also work on 1st one 
+
+
+// change all
 let element = document.querySelectorAll(".box");
-let i = 0;
-for (div of element){
-    console.log(div);
-    div.innerText = `usama khanzada${i}`;
-    i++;
-}
-console.log(element);
-
-
-
-// element[0].innerText = "usama khanzada";
-// element[1].innerText = "jameel khanzada";
-// element[2].innerText = "haseeb khanzada";
-console.log(element);
+element.forEach( (ele)=> {
+    ele.style.backgroundColor = "red";
+    ele.style.border="2px solid black";
+    
+    
+});
