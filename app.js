@@ -1694,7 +1694,7 @@
 // console.log(element.getAttribute("name"));
 
 // setAttribute() => ye method kisi bhi element ka attribute set karta hai
-// 
+//
 // its chang first one.
 // let element = document.querySelector(".box");
 // element.setAttribute("class", "boxclass");
@@ -1707,22 +1707,77 @@
 //     ele.setAttribute("class","boxclass");
 //     console.log(ele);
 // });
-    
-
 
 // node.style => ye method kisi bhi element ka style set karta hai
 
 // let element = document.querySelectora(".box");
 // element.style.backgroundColor = "red";
 
-// its also work on 1st one 
-
+// its also work on 1st one
 
 // change all
-let element = document.querySelectorAll(".box");
-element.forEach( (ele)=> {
-    ele.style.backgroundColor = "red";
-    ele.style.border="2px solid black";
-    
-    
-});
+// let element = document.querySelectorAll(".box");
+// element.forEach( (ele)=> {
+//     ele.style.backgroundColor = "red";
+//     ele.style.border="2px solid black";
+
+// });
+
+// for insert element
+// .append() => ye method kisi bhi element ko kisi doosre element ke andar insert karta hai.
+
+// let btn = document.createElement("button");//yaha btn variable m button banaya h
+// btn.innerText ="click me";// us k undr text likha h
+// let element = document.querySelector(".box"); // jis class ya element k under insert karana h
+// element.append(btn);// . append use for insert in end of element
+
+// .prepend() => ye method kisi bhi element ko kisi doosre element ke andar start me insert karta hai.
+
+// let btn = document.createElement("button");//yaha btn variable m button banaya h
+// btn.innerText = "click me";// us k undr text likha h
+// let element = document.querySelector(".box");// jis class ya element k under insert karana h
+// element.prepend(btn);// . prepend use for insert in start of element
+
+// add para
+
+// let pera = document.createElement("p");
+// pera.innerText = "khanazada";
+// let element = document.querySelector("div");
+// element.append(pera);
+
+// before() add before the selected element out side
+// let btn = document.createElement("button");
+// btn.innerText ="click me";
+// let element = document.querySelector(".box");
+// element.before(btn);
+
+// after() add after the selected element out side
+
+// let btn = document.createElement("button");
+// btn.innerText ="click me";
+// let element =document.querySelector(".box");
+// element.after(btn);
+
+// let newheading= document.createElement("h1");
+// newheading.innerHTML ="<i> usama khanzada</i>";
+// document.querySelector("body").prepend(newheading);
+
+
+// .remove() => ye method kisi bhi element ko remove karta hai.
+
+
+// let element = document.querySelector("h2");
+// element.remove();
+
+//   let box = document.querySelector('.box');
+//   let btn = document.createElement('button');
+//   btn.textContent = 'Click me';
+//   box.append(btn);
+// console.log(box);
+
+// appendChild() => ye method kisi bhi element ko kisi doosre element ke andar insert karta hai. 
+// ye text node darect add nahi krta convert krnaperta h  
+
+let heading = document.createElement("h1");
+// heading.innerText= "usama";
+document.querySelector("div").appendChild("usama");
