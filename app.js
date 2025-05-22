@@ -1762,9 +1762,7 @@
 // newheading.innerHTML ="<i> usama khanzada</i>";
 // document.querySelector("body").prepend(newheading);
 
-
 // .remove() => ye method kisi bhi element ko remove karta hai.
-
 
 // let element = document.querySelector("h2");
 // element.remove();
@@ -1775,9 +1773,82 @@
 //   box.append(btn);
 // console.log(box);
 
-// appendChild() => ye method kisi bhi element ko kisi doosre element ke andar insert karta hai. 
-// ye text node darect add nahi krta convert krnaperta h  
+// appendChild() => ye method kisi bhi element ko kisi doosre element ke andar insert karta hai.
+// ye text node darect add nahi krta convert krnaperta h
 
-let heading = document.createElement("h1");
+// let heading = document.createElement("h1");
 // heading.innerText= "usama";
-document.querySelector("div").appendChild("usama");
+// document.querySelector("div").appendChild(heading);
+// console.log(heading);
+// let textNod = document.createTextNode("usama khanzada");
+// let result = document.querySelector("div").appendChild(textNod);
+// console.log(result);
+// let element= document.createElement("p");
+// let textNode = document.createTextNode("usama khanzada");
+// element.appendChild(textNode);
+// document.querySelector("div").appendChild(element);
+
+// removeChild() => ye method kisi bhi element ko kisi doosre element se remove karta hai.
+//  let element = document.querySelector("#myid");
+//  let remove = element.children[2];
+//  element.removeChild(remove);
+
+
+
+// practice question
+// question is create a button element give it text click me back ground color red and text color white is js
+
+
+// let element = document.querySelector("body");
+// let btn = document.createElement("button");
+
+// btn.innerText="click me";
+// element.prepend(btn);
+
+// btn.style.backgroundColor="red";
+// btn.style.color= "white";
+
+
+// create a <P> tag in htmal , give it a class and some style
+// now create a new class in css  and try to append this class to the <p> element 
+// 
+// let elements = document.querySelector(".pera");
+// // elements.getAttribute("class");
+// elements.setAttribute("class","contant")
+
+// did you notice , how you overwrite the class name when you add a new one?
+// solve this using classlist 
+
+ 
+// let elements = document.querySelector(".pera");
+// elements.getAttribute("class");
+// elements.classList.add("pera","contant")
+
+// other way/
+// let pera = document.querySelector(".pera");
+// pera.classList.add("contant"); 
+
+
+// classList JavaScript ka ek built-in property hai jo kisi DOM element ki classes ko manage karne ke liye use hoti hai.
+//  Iski madad se aap class ko asaani se
+//  add, remove, toggle, 
+// ya check kar sakte hain, bina string manipulation ke
+
+// let element = document.querySelector("div");
+
+// // Class add karna
+// element.classList.add("active");
+
+// // Class remove karna
+// element.classList.remove("active");
+
+// // Class ko toggle karna (agar hai to hata dega, nahi hai to add kar dega)
+// element.classList.toggle("active");
+
+// // Check karna ke class lagi hai ya nahi
+// element.classList.contains("active"); // true ya false return karega
+
+// // Ek se zyada class add/remove bhi kar sakte hain
+// element.classList.add("first", "second");
+// element.classList.remove("first", "second");
+
