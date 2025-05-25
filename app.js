@@ -1793,11 +1793,8 @@
 //  let remove = element.children[2];
 //  element.removeChild(remove);
 
-
-
 // practice question
 // question is create a button element give it text click me back ground color red and text color white is js
-
 
 // let element = document.querySelector("body");
 // let btn = document.createElement("button");
@@ -1808,30 +1805,27 @@
 // btn.style.backgroundColor="red";
 // btn.style.color= "white";
 
-
 // create a <P> tag in htmal , give it a class and some style
-// now create a new class in css  and try to append this class to the <p> element 
-// 
+// now create a new class in css  and try to append this class to the <p> element
+//
 // let elements = document.querySelector(".pera");
 // // elements.getAttribute("class");
 // elements.setAttribute("class","contant")
 
 // did you notice , how you overwrite the class name when you add a new one?
-// solve this using classlist 
+// solve this using classlist
 
- 
 // let elements = document.querySelector(".pera");
 // elements.getAttribute("class");
 // elements.classList.add("pera","contant")
 
 // other way/
 // let pera = document.querySelector(".pera");
-// pera.classList.add("contant"); 
-
+// pera.classList.add("contant");
 
 // classList JavaScript ka ek built-in property hai jo kisi DOM element ki classes ko manage karne ke liye use hoti hai.
 //  Iski madad se aap class ko asaani se
-//  add, remove, toggle, 
+//  add, remove, toggle,
 // ya check kar sakte hain, bina string manipulation ke
 
 // let element = document.querySelector("div");
@@ -1852,3 +1846,99 @@
 // element.classList.add("first", "second");
 // element.classList.remove("first", "second");
 
+// event
+// event is a action that occurs in the browser
+// the change in the state of the object is called event
+// event are fired to notify code of "interesting changes" that have occurred or effect code execution
+
+// onclick => when user click on the element
+
+// let button = document.querySelector("#btn");
+// button.onclick= (event)=>{
+//     console.log(event.type, event.target, event.currentTarget, event.clientX, event.clientY);
+//     // let a =20;
+//     // a++;
+//     // console.log(a);
+
+// };
+
+// let div = document.querySelector("div");
+// div.onmouseover =()=>{
+//     console.log("mouse is over the div");
+//     div.style.backgroundColor = "red";
+// }
+
+// div.onmouseout = ()=>{
+//     div.style.backgroundColor="blue";
+// };
+
+// event object // event object is a object that contains information about the event that occurred
+
+// let button = document.querySelector("#btn");
+// button.onclick= (event)=>{
+//     console.log(event.type, event.target, event.currentTarget, event.clientX, event.clientY);
+
+// };
+
+// Kuch Useful Properties:
+// event.type → Event ka naam (click, keyup, etc.)
+// event.target → Jis element par event laga hai
+// event.currentTarget → Jis element par listener laga hai (kabhi kabhi alag hota hai)
+// event.key → Konsi key press hui (keyboard events)
+// event.preventDefault() → Default action rok deta hai (jaise form submit na ho)
+// event.stopPropagation() → Event bubble ya propagate hone se rokta hai
+
+// node.addEventListener(event, callback);
+// addEventListener() => ye method kisi bhi element par event listener add karta hai.
+// is ma same  event pr miltiple event laga sakty hn
+
+// let  button = document.querySelector("#btn");
+// button.addEventListener("click",(eve)=>{
+//     console.log("usama 1");
+
+// });
+
+// let  button2 = document.querySelector("#btn");
+// button2 .addEventListener("click",(eve)=>{
+//     console.log("usama2");
+
+// });
+
+// removeEventListener() => ye method kisi bhi element se event listener remove karta hai.
+
+// let button = document.querySelector("#btn");
+// button.addEventListener("click", (eve) => {
+//   console.log("usama1");
+// });
+// button.addEventListener("click", (eve) => {
+//   console.log("usama2");
+// });
+// function usamahendler(eve) {
+//   console.log("usama3");
+// }
+// button.addEventListener("click", usamahendler);
+
+// button.addEventListener("click", (eve) => {
+//   console.log("usama4");
+// });
+
+// button.removeEventListener("click", usamahendler);
+
+
+let button = document.querySelector("#btn");
+button.addEventListener("click", (eve) => {
+  console.log("usama1");
+});
+button.addEventListener("click", (eve) => {
+  console.log("usama2");
+});
+let  usamahendler=(eve)=> {
+  console.log("usama3");
+};
+button.addEventListener("click", usamahendler);
+
+button.addEventListener("click", (eve) => {
+  console.log("usama4");
+});
+
+button.removeEventListener("click", usamahendler);
