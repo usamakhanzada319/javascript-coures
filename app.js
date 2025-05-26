@@ -1924,21 +1924,35 @@
 
 // button.removeEventListener("click", usamahendler);
 
+// let button = document.querySelector("#btn");
+// button.addEventListener("click", (eve) => {
+//   console.log("usama1");
+// });
+// button.addEventListener("click", (eve) => {
+//   console.log("usama2");
+// });
+// let  usamahendler=(eve)=> {
+//   console.log("usama3");
+// };
+// button.addEventListener("click", usamahendler);
 
-let button = document.querySelector("#btn");
-button.addEventListener("click", (eve) => {
-  console.log("usama1");
-});
-button.addEventListener("click", (eve) => {
-  console.log("usama2");
-});
-let  usamahendler=(eve)=> {
-  console.log("usama3");
-};
-button.addEventListener("click", usamahendler);
+// button.addEventListener("click", (eve) => {
+//   console.log("usama4");
+// });
 
-button.addEventListener("click", (eve) => {
-  console.log("usama4");
-});
+// button.removeEventListener("click", usamahendler);
 
-button.removeEventListener("click", usamahendler);
+// document.addEventListener("DOMContentLoaded", function () {
+//   let btn = document.querySelector('.switch input[type="checkbox"]');
+//   btn.addEventListener("change", (eve) => {
+//     if (btn.checked) {
+//       document.body.style.backgroundColor = "black";
+//       document.body.style.color = "white";
+//     } else {
+//       document.body.style.backgroundColor = "white";
+//       document.body.style.color = "black";
+//     }
+//   });
+// });
+
+ ``
